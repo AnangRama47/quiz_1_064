@@ -37,8 +37,8 @@ if __name__ == "_main_":
 
     # Menghitung element terbesar dan terkecil
     min_value, max_value = matrix_operations.find_min_max()
-    print(f"Minimum value: {min_value}")
-    print(f"Maximum value: {max_value}")
+    print(f"Elemen terkecil: {min_value}")
+    print(f"Elemen terbesar: {max_value}")
 
     # Transpose matrix
     transposed_matrix = matrix_operations.transpose()
@@ -46,15 +46,15 @@ if __name__ == "_main_":
     for row in transposed_matrix:
         print(row)
 
-    # Menghitung perkalian matrix (A) dan (T)
+    # Menghitung perkalian dengan transpose
     matrix_b = matrix_operations.transpose()
     multiplication_result = matrix_operations.matrix_multiplication(matrix_b)
-    print("Matrix multiplication result:")
+    print("Hasil perkalian matrix A dan transpose:")
     for row in multiplication_result:
         print(row)
 
-    # Menghitung penjumlahan matrix (T) dan (A)
+    # Menghitung penjumlahan matrix dengan transpose
     addition_result = matrix_operations.matrix_addition(matrix_b)
-    print("Matrix addition result:")
+    print("Hasil penjumlahan matrix A dan transpose:")
     for row in addition_result:
         print(row)
